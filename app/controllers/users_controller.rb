@@ -1,5 +1,5 @@
 
-  class UsersController < ApplicationController
+class UsersController < ApplicationController
 
  def index
    @users = User.all
@@ -15,7 +15,10 @@
 
  def create
    @user = User.create(user_params)
-   redirect_to @user
+   if @user.valid?
+     redirect_to users_path
+   else
+     redirect_to new_user_path
  end
 
 
@@ -26,3 +29,4 @@
  end
 
 end
+end 

@@ -1,6 +1,6 @@
-witch1 = User.create(name: "Sabrina Spellman", zodiac_sign: "scorpio", bio: "Badass bitch")
-witch2 = User.create(name: "Zelda Spellman", zodiac_sign: "leo", bio: "High priestess")
-witch3 = User.create(name: "Hilda Spellman", zodiac_sign: "libra", bio: "Likable")
+witch1 = User.create(name: "Sabrina Spellman", zodiac_sign: "scorpio", bio: "Badass bitch",username:"sabrina",password:"hexcode")
+witch2 = User.create(name: "Zelda Spellman", zodiac_sign: "leo", bio: "High priestess",username:"zelda", password:"hexcode")
+witch3 = User.create(name: "Hilda Spellman", zodiac_sign: "libra", bio: "Likable",username:"hilda",password:"hexcode")
 
 spell1 = Spell.create(name:"Become a Programming Genius", category: "success", interactive: "false", magical_supplies: "Macbook, Glorius Pegasus Sticker, Coffee",instructions: "cry it out.")
 spell2 = Spell.create(name:"Simple Love Spell", category: "love", interactive: "true", magical_supplies: "piece of lovers hair, morter, roserips, red wine", instructions: "you know what to do with these materials")
