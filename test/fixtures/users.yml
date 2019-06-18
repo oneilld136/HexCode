@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  zodiac_sign: MyString
+  bio: MyString
+
+two:
+  name: MyString
+  zodiac_sign: MyString
+  bio: MyString

@@ -1,0 +1,3 @@
+class SpellbooksController < ApplicationController
+  
+end
