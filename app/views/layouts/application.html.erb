@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>HexCode</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+ <head>
+   <title>:sparkles:HexCode:sparkles:</title>
+   <%= csrf_meta_tags %>
+   <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-    <%= yield %>
-  </body>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+
+ <link rel="stylesheet" href="styles.css">
+
+ <body style="background-color:#581845;">
+     <%= yield %>
+   </body>
+
 </html>
