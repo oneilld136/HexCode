@@ -2,8 +2,11 @@ class SpellsController < ApplicationController
 
 
   def index
-    @spells = Spell.all
-  end
+   @spells = Spell.all
+   if params[:search]
+     @spells = Spell.where('name lIKE ?', "%#{params[:search]}%")
+   end
+ end
 
   def show
     @spell = Spell.find(params[:id])
