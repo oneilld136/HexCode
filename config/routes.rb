@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
  get '/', to: "users#welcome"
  get '/login', to: "users#login"
+
 end

@@ -21,6 +21,9 @@ class UsersController < ApplicationController
      redirect_to new_user_path
  end
 
+#  def welcome
+#  end 
+
  def destroy
   logout
   redirect_to '/'
