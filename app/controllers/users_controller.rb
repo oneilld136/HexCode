@@ -1,11 +1,7 @@
 
 class UsersController < ApplicationController
-
+ skip_before_action :authorized?, only: [:new, :create]
   # before_action :authorized?
-
- def index
-   @users = User.all
- end
 
  def show
    @user = User.find(params[:id])
@@ -19,6 +15,7 @@ class UsersController < ApplicationController
  def create
    @user = User.create(user_params)
    if @user.valid?
+     session[:user_id] = @user.id
      redirect_to user_path
    else
      redirect_to new_user_path
