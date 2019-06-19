@@ -11,25 +11,22 @@
 
 
 
-- Add horoscope of the day // Ask Mallory and partner jic
+<!-- Add horoscope of the day // Ask Mallory and partner jic -->
 <br>
 
-<h2>:crystal_ball: Here is a list of your spells :crystal_ball:</h2>
+<h1>:🌑 Here is a list of your spells 🌑 :</h1>
 
 <br>
 
-<%= link_to "Create A Spell", new_spell_path %>
-<%= link_to "Search Spells", spells_path %>
-Join A Coven
+Create A Spell   Search Spells    Join A Coven
 
 <br>
 <br>
 <br>
 
 <% if @logged_in %>
+ <%= button_to "Log out #{@user.username}", "/logout", method: :delete %>
+<%end %>
 
-   <%= button_to "Log out #{@user.username}", "/logout", method: :delete %>
-   <%end %>
 
-
-   <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>
+ <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>
