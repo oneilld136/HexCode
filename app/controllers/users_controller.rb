@@ -27,7 +27,7 @@ class UsersController < ApplicationController
  def destroy
   logout
   redirect_to '/'
-end 
+end
 
 end
 
