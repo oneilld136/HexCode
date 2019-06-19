@@ -27,7 +27,10 @@ class UsersController < ApplicationController
   session[:user_id] =  nil
   redirect_to '/'
 end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 17d22351141280a501841e537ff8e41b99c1b16b
 
 end
 
