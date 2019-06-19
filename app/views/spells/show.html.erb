@@ -1,7 +1,10 @@
 <h1> <%= @spell.name %> </h1>
+<h5> <%=@spell.category %> </h5>
 
+<p> <%= @spell.instructions %> </p>
+<p> <%= @spell.magical_supplies %> </p>
 
+<p> Interactive? <%= @spell.interactive %> </p>
 
-
-
-<%= button_to "Delete", @spell, method: :get %>
+<%= link_to "Search spells", spells_path %>
+<%= button_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"} %>
