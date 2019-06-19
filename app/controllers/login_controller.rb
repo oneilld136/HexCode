@@ -11,8 +11,8 @@ class LoginController < ApplicationController
       session[:user_id] = @user.id
       redirect_to @user
     else
-      flash[:messages] = "Incorrect username or password!"
+      flash[:errors] = @user.errors.full_messages
       redirect_to '/'
     end
   end
-end 
+end

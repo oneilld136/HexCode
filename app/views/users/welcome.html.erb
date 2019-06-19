@@ -1,7 +1,12 @@
 <br>
 <br><br><br><br>
-<center><h1 style="color:white;"> Welcome to HexCode </h1></center>
+<center><h1 style="color:white;">🔮  Welcome to HexCode 🔮  </h1></center>
 
+<%if flash[:errors] %>
+<%flash[:errors].each do |error|%>
+<%=error%>
+<%end %>
+<%end %>
 
 <%= form_tag '/login' do %>
 <%= label_tag :username %>
