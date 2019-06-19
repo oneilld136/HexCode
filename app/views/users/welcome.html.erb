@@ -1,7 +1,11 @@
-<center><h1 style="color:white;"> Welcome to HexCode </h1></center>
-<<<<<<< HEAD
-=======
 
+<center><h1 style="color:white;">🔮  Welcome to HexCode 🔮  </h1></center>
+
+<%if flash[:errors] %>
+<%flash[:errors].each do |error|%>
+<%=error%>
+<%end %>
+<%end %>
 
 <%= form_tag '/login' do %>
 <%= label_tag :username %>
@@ -12,4 +16,4 @@
 <%end%>
 
 <%= link_to "Join The Coven", new_user_path %>
->>>>>>> danielle
+

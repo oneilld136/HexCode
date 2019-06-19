@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   def authorized?
     unless @logged_in
-      return redirect_to users_path
+      return redirect_to '/'
     end
   end
 
