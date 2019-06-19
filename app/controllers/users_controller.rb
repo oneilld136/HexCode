@@ -1,6 +1,6 @@
 
 class UsersController < ApplicationController
- skip_before_action :authorized?, only: [:new, :create]
+ skip_before_action :authorized?, only: [:new, :create, :welcome]
   # before_action :authorized?
 
  def show
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
  def destroy
   logout
   redirect_to '/'
-end 
+end
 
 end
 
@@ -37,5 +37,4 @@ end
    params.require(:user).permit(:name, :zodiac_sign, :bio, :username , :password)
  end
 
-end
 end
