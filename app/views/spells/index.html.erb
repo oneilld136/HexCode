@@ -2,6 +2,6 @@
 
 <ul>
 <%@spells.each do |spell| %>
-<h2><li><%= spell.name %></li></h2>
+<h2><li><%= link_to spell.name, spell %></li></h2>
 <%end %>
 </ul>
