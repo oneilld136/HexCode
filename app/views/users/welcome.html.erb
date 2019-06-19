@@ -3,19 +3,12 @@
 <center><h1 style="color:white;"> Welcome to HexCode </h1></center>
 
 
-<div class="row">
-<div class="col-md-6 col-md-offset-3"><%= form_for(:session, url: login_path) do |f| %>
+<%= form_tag '/login' do %>
+<%= label_tag :username %>
+<%= text_field_tag :username %>
+<%= label_tag :password%>
+<%= text_field_tag :password%>
+<%= submit_tag "Login"%>
+<%end%>
 
-  <%= f.label :username %>
-  <%= f.text_field :username, class: 'form-control' %>
-
-  <%= f.label :password %>
-  <%= f.text_field :password, class: 'form-control' %>
-
-  <%= f.submit "Enter", class: "btn btn-primary" %>
-  <center>
-  <% end %></center><br><br>
-
-  <center><%= button_to "Join the coven", new_user_path, method: :get %></center>
-</div>
-</div>
+<%= link_to "Join The Coven" , new user path %>

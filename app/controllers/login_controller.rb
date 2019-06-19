@@ -1,5 +1,7 @@
 class LoginController < ApplicationController
 
+  # before_action :authorized?
+
     def new
       @login = Login.new
     end
