@@ -1,7 +1,7 @@
 
 class UsersController < ApplicationController
 
-  before_action :authorized?
+  # before_action :authorized?
 
  def index
    @users = User.all
