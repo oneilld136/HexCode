@@ -16,7 +16,7 @@ class UsersController < ApplicationController
  def create
    @user = User.create(user_params)
    if @user.valid?
-     redirect_to users_path
+     redirect_to user_path
    else
      redirect_to new_user_path
  end
@@ -29,4 +29,4 @@ class UsersController < ApplicationController
  end
 
 end
-end 
+end
