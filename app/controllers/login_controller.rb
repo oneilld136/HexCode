@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
+
   skip_before_action :authorized?, only: [:new, :create]
-  # before_action :authorized?
 
   def new
   end
@@ -15,6 +15,4 @@ class LoginController < ApplicationController
       redirect_to '/'
     end
   end
-
-
-end
+end 
