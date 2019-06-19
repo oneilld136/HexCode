@@ -11,8 +11,13 @@ class LoginController < ApplicationController
       session[:user_id] = @user.id
       redirect_to @user
     else
-      flash[:errors] = @user.errors.full_messages
+      flash[:messages] = "Username or Password Doesn't Exist!"
       redirect_to '/'
     end
   end
+
+  def destroy
+    logout
+  redirect_to '/'
+end
 end

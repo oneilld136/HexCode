@@ -1,6 +1,6 @@
 
 class UsersController < ApplicationController
- skip_before_action :authorized?, only: [:new, :create]
+ skip_before_action :authorized?, only: [:new, :create, :welcome]
   # before_action :authorized?
 
  def show
@@ -16,15 +16,19 @@ class UsersController < ApplicationController
    @user = User.create(user_params)
    if @user.valid?
      session[:user_id] = @user.id
-     redirect_to user_path
+     redirect_to @user
    else
      redirect_to new_user_path
  end
 
  def destroy
-  logout
+  @user = User.find(params[:id])
+  @user.destroy
+  session[:user_id] =  nil 
   redirect_to '/'
-end 
+end
+
+
 
 end
 
@@ -37,5 +41,4 @@ end
    params.require(:user).permit(:name, :zodiac_sign, :bio, :username , :password)
  end
 
-end
 end
