@@ -3,7 +3,7 @@
 <center><h1 style="color:white;"> Welcome to HexCode </h1></center>
 
 
-<%= form_tag '/login' do %>
+<%= form_tag '/welcome' do %>
 <%= label_tag :username %>
 <%= text_field_tag :username %>
 <%= label_tag :password%>
@@ -11,4 +11,4 @@
 <%= submit_tag "Login"%>
 <%end%>
 
-<%= link_to "Join The Coven" , new user path %>
+<%= link_to "Join The Coven", new_user_path %>
