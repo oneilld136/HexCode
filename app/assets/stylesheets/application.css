@@ -21,11 +21,11 @@ body {
   h3 {
     font-family: serif;
     font-weight: 100 ;
-    color: #9DD1E6  ;
+    color: #DFE3AF    ;
     font-size: 20px;
   }
 
-  button {
+  .button-to-text-color {
    background: #92c7eb; background-image: url(https://us.123rf.com/450wm/naddya/naddya1409/naddya140900025/31620668-stock-vector-witch-on-a-broomstick-vector-black-silhouette-.jpg?ver=6)
 }
 

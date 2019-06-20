@@ -1,6 +1,6 @@
-<h1> Brew up a spell</h1>
+<center><h1>☠️  Brew up a spell 🕯 </h1><center>
 
-<%= form_for @spell do |f| %>
+<h3><%= form_for @spell do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br><br>
 
@@ -16,9 +16,13 @@
   <%=f.label :interactive %>
   <%=f.check_box :interactive %><br><br>
 
-  <%= f.submit "Brew" %>
+  <%= f.submit "Brew" %></h3>
 
 <% end %>
 
+<br>
+<br>
+<br>
 
-<%= link_to "Back to profile", @current_user %>
+
+<h3><%= link_to "Back to profile", @current_user, class: 'link-to-text-color' %></h3>
