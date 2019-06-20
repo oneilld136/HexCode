@@ -23,8 +23,12 @@
 
 <br>
 
-<h1>💎 Your Spells 💎 </h1>
-
+<center><h1>💎 Your Spells 💎 </h1></center>
+  <ul>
+    <% @user.spells.each do |spell| %>
+        <li> <%= spell.name %> </li>
+    <% end %>
+  </ul>
 
 <br>
 
