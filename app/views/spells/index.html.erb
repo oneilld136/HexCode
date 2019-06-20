@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>✨HexCode✨</title>
 
+    <title>✨HexCode✨</title>
     <link rel="stylesheet" media="all" href="/assets/spells-index.scss" data-turbolins-tracks="reload">
+
   </head>
   <body>
 
@@ -14,12 +15,15 @@
           <%= text_field_tag :search%>
         <%= submit_tag "Search" %>
     </nav>
-    <center><h1> Your Spellbook </h1></center>
-    <ul style="list-style: none;"
 
-   <%@spells.each do |spell| %>
-   <h2><li><%= link_to spell.name, spell, class:'link-to-text-color'%></li></h2>
-   <%end %>
-   </ul>
+    <center><h1> Your Spellbook </h1></center>
+      <div class="spells-index">
+          <%@spells.each do |spell| %>
+            <div class="spell-card">
+                <%= link_to spell.name, spell, class:'link-to-text-color'%>
+              </div>
+            <%end %>
+        </div>
+
 
 </body>
