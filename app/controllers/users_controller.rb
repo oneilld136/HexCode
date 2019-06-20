@@ -16,7 +16,7 @@ class UsersController < ApplicationController
    @user = User.create(user_params)
    if @user.valid?
      session[:user_id] = @user.id
-     redirect_to user_path
+     redirect_to @user
    else
      redirect_to new_user_path
  end
@@ -25,9 +25,12 @@ class UsersController < ApplicationController
 #  end 
 
  def destroy
-  logout
+  @user = User.find(params[:id])
+  @user.destroy
+  session[:user_id] =  nil
   redirect_to '/'
 end
+
 
 end
 

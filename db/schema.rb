@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_06_18_145732) do
   create_table "spells", force: :cascade do |t|
     t.string "name"
     t.string "category"
-    t.boolean "interactive", default: true
+    t.boolean "interactive"
     t.string "magical_supplies"
     t.string "instructions"
     t.datetime "created_at", null: false
@@ -36,11 +36,8 @@ ActiveRecord::Schema.define(version: 2019_06_18_145732) do
     t.string "name"
     t.string "zodiac_sign"
     t.string "bio"
-<<<<<<< HEAD
     t.string "username"
     t.string "password_digest"
-=======
->>>>>>> 5a7a36bd016af2861ef61bbf04fb23698f30e8ac
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
