@@ -2,13 +2,21 @@
 <html>
   <head>
     <title>✨HexCode✨</title>
+
+    <link rel="stylesheet" media="all" href="/assets/spells-show.scss" data-turbolins-tracks="reload">
   </head>
 
   <body>
 
-  <% yield %>
+    <nav>
+        <%= link_to "Profile", @current_user, class: "nav-link" %>
+        <%= link_to "Edit", edit_spell_path, class: "nav-link" %>
+        <%= link_to "Search spells", spells_path, class: "nav-link"%>
+        <%= link_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"},class: "nav-link" %>
+    </nav>
+
     <div class="container">
-      <h1> <%= @spell.name %> </h1>
+      <h2> <%= @spell.name %> </h2>
       <h5> Category: <%=@spell.category %> </h5>
 
       <p> Instructions: <%= @spell.instructions %> </p>
@@ -16,10 +24,6 @@
 
       <p> Interactive? <%= @spell.interactive %> </p>
 
-      <%= link_to "Search spells", spells_path %><br>
-      <%= link_to "Back to profile", @current_user %><br><br>
-      <%= button_to 'Edit', edit_spell_path(@spell), method: 'get' %>
-      <%= button_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"} %>
     </div>
 
 
