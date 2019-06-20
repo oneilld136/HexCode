@@ -1,15 +1,16 @@
 <h1> Welcome Back <%= @user.name %> </h1>
 <br>
 
-<h2> Horoscope: </h2>
 
 
-   <h2><%= @user.zodiac_sign %> Daily Horoscope : </h2>
+
+   <h2><%= @user.zodiac_sign %>  </h2>
+     <h2>🔮 daily horoscope :🔮  </h2>
    <%=@user.h_daily%>
-   fetched_horoscope = $current_user.h_daily
+
 <br>
 
-<h2> Bio: </h2>
+<h2> bio: </h2>
   <%= @user.bio %>
 <br>
 

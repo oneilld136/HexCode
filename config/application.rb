@@ -10,7 +10,6 @@ Bundler.require
 require 'json'
 require 'open-uri'
 require 'date'
-require 'colorize'
 require 'erb'
 module HexCode
   class Application < Rails::Application

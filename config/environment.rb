@@ -6,7 +6,6 @@ Bundler.require
 require 'json'
 require 'open-uri'
 require 'date'
-require 'colorize'
 require 'erb'
 
 # require_all 'lib'
