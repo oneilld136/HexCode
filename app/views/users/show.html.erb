@@ -1,11 +1,19 @@
 <h1> Welcome Back <%= @user.name %> </h1>
 <br>
 
-<h2> <%= @user.zodiac_sign %> </h2>
+<h2> Horoscope: </h2>
+
+
+   <h2><%= @user.zodiac_sign %> Daily Horoscope : </h2>
+   <%=@user.h_daily%>
+   fetched_horoscope = $current_user.h_daily
 <br>
 
-<h2> <%= @user.bio %></h2>
+<h2> Bio: </h2>
+  <%= @user.bio %>
 <br>
+
+<!-- moon.percent_full -->
 
 
 
@@ -14,11 +22,12 @@
 <!-- Add horoscope of the day // Ask Mallory and partner jic -->
 <br>
 
-<h1>:🌑 Here is a list of your spells 🌑 :</h1>
+<h1>💎 Your Spells 💎 </h1>
+
 
 <br>
 
-Create A Spell   Search Spells    Join A Coven
+<%= link_to "Create A Spell", new_spell_path %> ~ * ~ * ~ * ~ <%= link_to "Search Spells", spells_path %>
 
 <br>
 <br>

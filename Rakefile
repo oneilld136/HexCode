@@ -3,4 +3,9 @@
 
 require_relative 'config/application'
 
+desc "ev_console"
+task :ev_console => :setup_env do
+  IRB.start
+end 
+
 Rails.application.load_tasks
