@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-
-<<<<<<< Updated upstream
-<ul>
-<%@spells.each do |spell| %>
-<h2><li><%= spell.name %></li></h2>
-<%end %>
-</ul>
-=======
-<<link href="style.css" type="text/css" rel="stylesheet">>
-  </head>
 
 
-  <body>
+
+
     <h1>All of the spells</h1>
     <%= link_to "Create a spell", new_spell_path %>
 
@@ -27,9 +15,6 @@
     <%= form_tag "/spells", method: :get%>
       <%= text_field_tag :search%>
     <%= submit_tag "Search" %>
-  </body>
+
 
   <%= link_to "Back to profile", @current_user %>
-
-</html>
->>>>>>> Stashed changes
