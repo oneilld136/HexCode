@@ -1,0 +1,12 @@
+<h1> Learn a spell </h1>
+
+<%=form_for @spellbook do |f| %>
+  <%= f.label :spell %>
+  <%= f.collection_select :spell_id, @spells, :id, :name %><br><br>
+
+  <%= f.label :user %>
+  <%= f.collection_select :user_id, @users, :id, :name %><br><br>
+
+  <%= f.submit value="Cast" %>
+
+<% end %>
