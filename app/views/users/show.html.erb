@@ -1,16 +1,20 @@
 <h1> Welcome Back <%= @user.name %> </h1>
 <br>
 
-<h2> <%= @user.zodiac_sign %></h2>
+<h2> <%= @user.zodiac_sign %> </h2>
 <br>
 
 <h2> <%= @user.bio %></h2>
 <br>
 
-- Add horoscope of the day // Ask Mallory and partner jic
+
+
+
+
+<!-- Add horoscope of the day // Ask Mallory and partner jic -->
 <br>
 
-<h2>:crystal_ball: Here is a list of your spells :crystal_ball:</h2>
+<h1>:🌑 Here is a list of your spells 🌑 :</h1>
 
 <br>
 
@@ -20,4 +24,9 @@ Create A Spell   Search Spells    Join A Coven
 <br>
 <br>
 
-<%= link_to "Logout", @user  %>
+<% if @logged_in %>
+ <%= button_to "Log out #{@user.username}", "/logout", method: :delete %>
+<%end %>
+
+
+ <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>

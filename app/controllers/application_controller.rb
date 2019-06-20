@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   def find_user
     @user_id = session[:user_id]
+    @message = flash[:messages]
     @logged_in = !!@user_id
     if @logged_in
       @current_user = User.find(@user_id)

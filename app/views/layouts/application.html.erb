@@ -5,15 +5,13 @@
    <%= csrf_meta_tags %>
    <%= csp_meta_tag %>
 
-
+   <!-- <link rel="stylesheet" href="styles.css"> -->
    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
  </head>
 
- <link rel="stylesheet" href="styles.css">
-
- <body style="background-color:#581845;">
-     <%= yield %>
-   </body>
+  <body style="background-color:#581845;">
+    <%= yield %>
+  </body>
 
 </html>

@@ -8,4 +8,10 @@ class User < ApplicationRecord
   validates :name, uniqueness: true
   validates :bio, length: {maximum: 50}
   validates :zodiac_sign, inclusion: { in: %w(aries cancer taurus leo gemini virgo libra capricorn scorpio aquarius sagittarius pisces), message: "%{value} is not a valid sign."}
+
+  def horiscope
+    @request_hash["response"]["results"].each do
+      puts [:date][:sunsign][:date]
+    end
+  end 
 end
