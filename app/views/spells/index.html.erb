@@ -14,3 +14,12 @@
           <%= text_field_tag :search%>
         <%= submit_tag "Search" %>
     </nav>
+    <center><h1> Your Spellbook </h1></center>
+    <ul style="list-style: none;"
+
+   <%@spells.each do |spell| %>
+   <h2><li><%= link_to spell.name, spell, class:'link-to-text-color'%></li></h2>
+   <%end %>
+   </ul>
+
+</body>
