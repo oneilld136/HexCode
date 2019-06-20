@@ -12,7 +12,6 @@
 
   </head>
 
-
 <body>
 <center><h1> Welcome Back 🌙  <%= @user.name %> </h1>
 <br>
@@ -58,11 +57,13 @@
 <br>
 <br>
 
-<% if @logged_in %>
- <%= button_to "Log out #{@user.username}", "/logout", method: :delete %>
-<%end %>
 
+<nav class="bottom-nav">
+  <% if @logged_in %>
+   <%= link_to "Log out #{@user.username}", "/logout", method: :delete, class: "bottom-nav"%>
+  <%end %>
+  <%= link_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete, data: {confirm: "Exiled"}, class: "bottom-nav" %>
+</nav>
 
- <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>
 
  </center></body>
