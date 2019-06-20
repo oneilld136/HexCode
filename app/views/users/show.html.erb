@@ -14,20 +14,20 @@
 
 
 <body>
-<h1> Welcome Back <%= @user.name %> </h1>
+<center><h1> Welcome Back 🌙  <%= @user.name %> </h1>
 <br>
 
 
 
 
-   🔮 <h2><%=@user.zodiac_sign %> daily horoscope :🔮  </h2>
+    <h2>🔮<%=@user.zodiac_sign %> daily horoscope :🔮  </h2>
 
-   <%=@user.h_daily%>
+   <h3><%=@user.h_daily%></h3>
 
 <br>
 
-<h2> bio: </h2>
-  <%= @user.bio %>
+<h2> bio:
+  <%= @user.bio %></h2>
 <br>
 
 <!-- moon.percent_full -->
@@ -39,16 +39,20 @@
 
 <br>
 
-<center><h1>💎 Your Spells 💎 </h1></center>
+<h2>💎 your spells 💎 </h2></center>
   <center><ul>
     <% @user.spells.each do |spell| %>
-        <li><%= link_to spell.name, spell_path %></li>
+        <h3><li><%= link_to spell.name, spell_path, class: 'link-to-text-color' %></li></h3>
     <% end %>
   </ul></center>
 
 <br>
+<br>
+<br>
+<br>
 
-<%= link_to "Create A Spell", new_spell_path %> ~ * ~ * ~ * ~ <%= link_to "Search Spells", spells_path %>
+
+<center><h3><%= link_to "Create A Spell", new_spell_path,class: 'link-to-text-color'%> ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ <%= link_to "Search Spells", spells_path, class: 'link-to-text-color' %></h3>
 
 <br>
 <br>
@@ -61,4 +65,4 @@
 
  <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>
 
- </body>
+ </center></body>

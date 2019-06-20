@@ -12,9 +12,10 @@ body {
   }
 
   h2 {
-    font-weight: ;
-    color: #fff;
-    font-size: 24px;
+    font-family: serif;
+    color: #AC90C2;
+    font-size: 40px;
+    font-weight:100 ;
   }
 
   h3 {
@@ -23,6 +24,14 @@ body {
     color: #9DD1E6  ;
     font-size: 20px;
   }
+
+  button {
+   background: #92c7eb; background-image: url(https://us.123rf.com/450wm/naddya/naddya1409/naddya140900025/31620668-stock-vector-witch-on-a-broomstick-vector-black-silhouette-.jpg?ver=6)
+}
+
+.link-to-text-color {
+  color: #C7D23B;
+}
 
 
 
