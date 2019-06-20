@@ -1,7 +1,7 @@
 <h1>🕸  Join the Community  🕸 </h1>
 
 
-<%= form_for @user do |f| %>
+<h3><%= form_for @user do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
 <%= f.label :username %>
@@ -12,10 +12,10 @@
 <%= f.text_area :bio %>
 <%= f.label :zodiac_sign %>
 <%= f.select :zodiac_sign, ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius"] %>
-<%= f.submit "Sign Up!" %>
+<%= f.submit "Sign Up!" %></h3>
 <%end%>
 
 <br>
 <br>
 
-<%= link_to "Back", '/' %>
+<h3><%= link_to "Back", '/', class: 'link-to-text-color' %></h3>
