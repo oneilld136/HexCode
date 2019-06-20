@@ -6,6 +6,9 @@ class UsersController < ApplicationController
  def show
    @spells = Spell.all
    @user = User.find(params[:id])
+   if @user.id != @current_user.id
+     redirect_to @current_user
+   end
  end
 
  def new
