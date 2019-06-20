@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # resources :spellbooks
+  resources :spellbooks, only: [:index]
   resources :spells
   resources :users
   resources :login, only: [:new, :create]
