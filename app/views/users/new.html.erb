@@ -10,6 +10,12 @@
 <%= f.text_field :password %>
 <%= f.label :bio %>
 <%= f.text_area :bio %>
+<%= f.label :zodiac_sign %>
 <%= f.select :zodiac_sign, ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius"] %>
 <%= f.submit "Sign Up!" %>
 <%end%>
+
+<br>
+<br>
+
+<%= link_to "Back", '/' %>

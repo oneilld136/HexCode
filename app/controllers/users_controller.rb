@@ -22,7 +22,7 @@ class UsersController < ApplicationController
  end
 
 #  def welcome
-#  end 
+#  end
 
  def destroy
   @user = User.find(params[:id])
@@ -30,6 +30,9 @@ class UsersController < ApplicationController
   session[:user_id] =  nil
   redirect_to '/'
 end
+
+
+
 
 
 end

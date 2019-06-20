@@ -1,10 +1,24 @@
-<h1> <%= @spell.name %> </h1>
-<h5> Category: <%=@spell.category %> </h5>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HexCode</title>
+  </head>
 
-<p> Instructions: <%= @spell.instructions %> </p>
-<p> Supplies: <%= @spell.magical_supplies %> </p>
+  <body>
 
-<p> Interactive? <%= @spell.interactive %> </p>
+  <% yield %>
+    <div class="container">
+      <h1> <%= @spell.name %> </h1>
+      <h5> Category: <%=@spell.category %> </h5>
 
-<%= link_to "Search spells", spells_path %>
-<%= button_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"} %>
+      <p> Instructions: <%= @spell.instructions %> </p>
+      <p> Supplies: <%= @spell.magical_supplies %> </p>
+
+      <p> Interactive? <%= @spell.interactive %> </p>
+
+      <%= link_to "Search spells", spells_path %>
+      <%= button_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"} %>
+
+    </div>
+  </body>
+</html>
