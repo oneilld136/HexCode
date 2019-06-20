@@ -1,4 +1,4 @@
-<h1> Create Form goes here</h1>
+<h1> Brew up a spell</h1>
 
 <%= form_for @spell do |f| %>
   <%= f.label :name %>
@@ -19,3 +19,6 @@
   <%= f.submit "Brew" %>
 
 <% end %>
+
+
+<%= link_to "Back to profile", @current_user %>

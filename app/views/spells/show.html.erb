@@ -16,9 +16,12 @@
 
       <p> Interactive? <%= @spell.interactive %> </p>
 
-      <%= link_to "Search spells", spells_path %>
+      <%= link_to "Search spells", spells_path %><br>
+      <%= link_to "Back to profile", @current_user %><br><br>
       <%= button_to "Delete", @spell, method: :delete, data: {confirm: "Can't undo"} %>
-
     </div>
+
+
+
   </body>
 </html>
