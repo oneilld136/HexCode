@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # before_action :authorized?
 
  def show
+   @spells = Spell.all
    @user = User.find(params[:id])
  end
 

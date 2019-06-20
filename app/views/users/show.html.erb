@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>✨HexCode✨</title>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    </style>
+
+  </head>
+
+
+<body>
 <h1> Welcome Back <%= @user.name %> </h1>
 <br>
 
@@ -24,11 +40,11 @@
 <br>
 
 <center><h1>💎 Your Spells 💎 </h1></center>
-  <ul>
+  <center><ul>
     <% @user.spells.each do |spell| %>
-        <li> <%= spell.name %> </li>
+        <li><%= link_to spell.name, spell_path %></li>
     <% end %>
-  </ul>
+  </ul></center>
 
 <br>
 
@@ -44,3 +60,5 @@
 
 
  <%= button_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete %>
+
+ </body>
