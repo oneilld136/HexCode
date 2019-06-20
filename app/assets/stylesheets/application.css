@@ -1,12 +1,32 @@
 body {
   background-image: url(stars.png), url(clouds.png);
+  }
+
+  h1 {
+    font-family: Apple Chancery, cursive;
+    color: #AC90C2;
+    font-size: 72px;
+    font-weight:300 ;
+
+
+  }
+
+  h2 {
+    font-weight: ;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-family: serif;
+    font-weight: 100 ;
+    color: #9DD1E6  ;
+    font-size: 20px;
+  }
 
 
 
 
-}
+
+
 );
-
-<FORM>
-<INPUT type="text" STYLE="color: #C2ACDD,   font-family: Verdana; font-weight: bold; font-size: 20px; background-color: #72A4D2;" size="10" maxlength="30">
-</FORM>
