@@ -17,8 +17,15 @@ class SpellsController < ApplicationController
   end
 
   def create
+    @spellbooks = Spellbook.all
     @spell = Spell.create(spells_params)
-    redirect_to @spell
+    if @spell.valid?
+      # @current_user.spells << @spell
+      Spellbook.create(spell: @spell, user: @current_user)
+      redirect_to @spell
+    else
+      redirect_to new_spell_path
+    end
   end
 
   def edit
