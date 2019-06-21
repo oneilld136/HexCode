@@ -37,7 +37,7 @@ module Lunartic
       when 15
         :full
       when 16..21
-        "waning gibbous 🌖" 
+        "waning gibbous" 
       when 22
         :last_quarter
       when 23..28
