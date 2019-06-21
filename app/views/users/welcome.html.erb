@@ -26,8 +26,10 @@
 <%= password_field_tag :password%>
 <%= submit_tag "Login"%></h3>
 <%end%>
+
 <br>
 <br>
 <br>
 
-<h2><%= button_to "Join The Coven", new_user_path, method: :get %></center></h2>
+
+<h2><%=link_to "Join the Coven", new_user_path,  class: 'link-to-text-color'%></h2>
