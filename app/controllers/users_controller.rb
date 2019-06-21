@@ -1,5 +1,7 @@
 
 class UsersController < ApplicationController
+
+  require 'Lunartic'
  skip_before_action :authorized?, only: [:new, :create, :welcome]
   # before_action :authorized?
 
