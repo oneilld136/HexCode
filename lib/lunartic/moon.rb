@@ -1,4 +1,4 @@
-module Lunartic < ApplicationRecord
+module Lunartic
   class Moon
     attr_reader :date
 
@@ -37,7 +37,7 @@ module Lunartic < ApplicationRecord
       when 15
         :full
       when 16..21
-        :waning_gibbous
+        "waning gibbous 🌖" 
       when 22
         :last_quarter
       when 23..28

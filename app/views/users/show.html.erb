@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>✨HexCode✨</title>
@@ -24,23 +26,37 @@
   </ul></center>
 
 
+<<<<<<< HEAD
     <h2>☪️ <%=@user.zodiac_sign %> daily horoscope : </h2>
 <div style="background-color:black;">
    <h3><%=@user.h_daily%></h3>
 </div>
+=======
+    <h2>☪️ <%=@user.zodiac_sign %> daily horoscope  </h2>
+
+   <p><%=@user.h_daily%></p>
+>>>>>>> 854724e4bca13810f70578d673a7dc62b20745bb
 
 <br>
 
-<!-- <moon = Lunartic.today
- moon.phase
-end -->
+<%moon = Lunartic.today %>
+ <% new_moon = moon.phase %>
 
-<center><iframe src="https://giphy.com/embed/NtDBzumKRZz1e" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
+
+
+<h2><img src="https://media.giphy.com/media/NtDBzumKRZz1e/giphy.gif" width="150" height="100" />   today's moon phase : <%=new_moon.to_s.sub('_', ' ') %></h2>
+
+
+<br>
+
+<center><img src="https://starinastar.com/wp-content/uploads/2018/08/Moon_Phases_Names_and_images_in_order-768x212.png"/><center>
+<!-- <center><iframe src="https://giphy.com/embed/xUNd9OwkwTb2GhJ7eo" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center> -->
+
 <!-- moon.percent_full -->
 
 
 
-
+"
 
 
 <br>
