@@ -25,24 +25,26 @@ nav .nav-link:hover {
 .spells-index {
     width:100%;
     margin: 3vw auto;
+    padding: 15;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .spell-card {
     background-image: url("./tarot.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     // padding: 20vw;
     // margin: 10vw;
-    height: 38vh;
+    height: 45vh;
     width: 18vw;
     margin: 1.5vw;
     box-shadow: 7px 10px 28px -5px rgba(145,145,145,1);
