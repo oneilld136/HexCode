@@ -25,6 +25,15 @@ body {
     font-size: 20px;
   }
 
+  p
+   {
+    font-family: serif;
+    font-stretch: semi-expanded
+    font-weight: 100 ;
+    color: #ADF0F4      ;
+    font-size: 25px;
+  }
+
   button {
   background: url(hat.png);
   text-indent:30px;
