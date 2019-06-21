@@ -37,6 +37,9 @@ end
   redirect_to '/'
 end
 
+
+def herbs
+end 
  private
 
  def user_params

@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
  get '/', to: "users#welcome"
  get '/login', to: "users#login"
+ get '/herbs', to: "users#herbs"
 
 end
