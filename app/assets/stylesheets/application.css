@@ -41,6 +41,16 @@ body {
 
 }
 
+li
+ {
+  font-family: serif;
+  font-stretch: semi-expanded
+  list-style-type: none;
+  font-weight: 100 ;
+  color: #CBF4AD;
+  font-size: 25px;
+}
+
   .module {
   cursor: url("ouija_planchette_by_mpissott-daju0uw.png"), pointer;
 }
@@ -76,8 +86,9 @@ link-to-text-coven {
 
 .link-to-text-spell-color{
   color: #581845;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
+  overflow-wrap: break-word;
 
 
 }
