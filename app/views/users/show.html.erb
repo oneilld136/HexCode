@@ -16,7 +16,7 @@
 <center><h1> Welcome Back 🌙  <%= @user.name %> </h1>
 <br>
 
-<h2>💎 your spells 💎 </h2></center>
+<h2>💎 Your Spells 💎 </h2></center>
   <center><ul>
     <% @user.spells.each do |spell| %>
         <h3><li><%= link_to spell.name, spell_path, class: 'link-to-text-color' %></li></h3>
@@ -24,12 +24,17 @@
   </ul></center>
 
 
-    <h2>🔮<%=@user.zodiac_sign %> daily horoscope :🔮  </h2>
+    <h2>☪️ <%=@user.zodiac_sign %> daily horoscope : </h2>
 
    <h3><%=@user.h_daily%></h3>
 
 <br>
 
+<!-- <moon = Lunartic.today
+ moon.phase
+end -->
+
+<center><iframe src="https://giphy.com/embed/NtDBzumKRZz1e" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
 <!-- moon.percent_full -->
 
 
@@ -42,7 +47,7 @@
 
 
 
-<center><h2><%= link_to "Create A Spell", new_spell_path,class: 'link-to-text-color'%> ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ <%= link_to "Search Spells", spells_path, class: 'link-to-text-color' %></h2>
+<center><h2><%= link_to "Create A Spell", new_spell_path,class: 'link-to-text-color'%> ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ * ~ * ~ * ~ ~ ~ * ~ * ~ * ~ ~ *  <%= link_to "Search Spells", spells_path, class: 'link-to-text-color' %></h2>
 
 <br>
 <br>
