@@ -38,8 +38,14 @@ body {
   background: url(hat.png);
   text-indent:30px;
    display:block;
-   cursor: pointer;
+
 }
+
+  .module {
+  cursor: url("ouija_planchette_by_mpissott-daju0uw.png"), pointer;
+}
+
+
 
 link-to-text-coven {
 
