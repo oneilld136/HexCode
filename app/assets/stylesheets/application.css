@@ -5,7 +5,7 @@ body {
   h1 {
     font-family: Apple Chancery, cursive;
     color: #AC90C2;
-    font-size: 72px;
+    font-size: 65px;
     font-weight:250 ;
 
 
@@ -13,24 +13,58 @@ body {
 
   h2 {
     font-family: serif;
-    color: #AC90C2;
-    font-size: 40px;
+    color: #E6D7B2  ;
+    font-size: 30px;
     font-weight:100 ;
   }
 
   h3 {
     font-family: serif;
     font-weight: 100 ;
-    color: #B1E7E3     ;
+    color: #BFF3D3   ;
     font-size: 20px;
   }
 
-  .button-to-text-color {
-   background: #92c7eb; background-image: url(https://us.123rf.com/450wm/naddya/naddya1409/naddya140900025/31620668-stock-vector-witch-on-a-broomstick-vector-black-silhouette-.jpg?ver=6)
+  button {
+  background: url(hat.png);
+  text-indent:30px;
+   display:block;
+   cursor: pointer;
+}
+
+link-to-text-coven {
+
+  font-family: Impact, fantasy;
+  font-weight: 200 ;
+  color: #E6B845;
+  font-size: 20px;
+}
+.edit-btn {
+  width: 15%;
+  height: 100px;
+  background-color: #927e7961;;
+  background-repeat: repeat
+
+}
+
+.login {
+  width: 15%;
+  height: 100px;
+  background-color:
+  background-repeat: repeat
+
 }
 
 .link-to-text-color {
-  color: #C7D23B;
+  color: #E6B845;
+}
+
+.link-to-text-spell-color{
+  color: #581845;
+  font-size: 20px;
+  text-align: center;
+
+
 }
 
 .bottom-nav {
