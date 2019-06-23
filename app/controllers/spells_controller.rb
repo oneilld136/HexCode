@@ -35,7 +35,7 @@ class SpellsController < ApplicationController
   def update
     @spell = Spell.find(params[:id])
     @spell.update(spells_params)
-    redirect_to spell
+    redirect_to @spell
   end
 
   def destroy
