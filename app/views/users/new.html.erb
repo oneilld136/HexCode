@@ -1,9 +1,21 @@
-<h1>🕸  Join the Community  🕸 </h1>
+<h2>🕸  “For all you know, a witch may be living next door to you right now.” -Roald Dahl  🕸 </h2>
 
-<%= form_for @user do |f| %>
+
+<h3><%= form_for @user do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
 <%= f.label :username %>
 <%= f.text_field :username %>
 <%= f.label :password %>
 <%= f.text_field :password %>
-<%= f.submit "Sign Up!" %>
+<%= f.label :bio %>
+<%= f.text_area :bio %>
+<%= f.label :zodiac_sign %>
+<%= f.select :zodiac_sign, ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius"] %>
+<%= f.submit "Enter" %></h3>
 <%end%>
+
+<br>
+<br>
+
+<h3><%= link_to "Back", '/', class: 'link-to-text-color' %></h3>

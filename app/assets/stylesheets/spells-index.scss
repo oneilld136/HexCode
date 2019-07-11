@@ -1,0 +1,52 @@
+// <!-- Nav-bar begins -->
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #250A05;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    transition: 0.8s;
+}
+
+nav .nav-link:hover {
+    transform: scale(1.3);
+}
+// <!-- Nav-bar ends -->
+
+// <!-- Containers begin -->
+.spells-index {
+    width:100%;
+    margin: 3vw auto;
+    padding: 15;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.spell-card {
+    background-image: url("./tarot.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // padding: 20vw;
+    // margin: 10vw;
+    height: 45vh;
+    width: 18vw;
+    margin: 1.5vw;
+    box-shadow: 7px 10px 28px -5px rgba(145,145,145,1);
+}
+// <!-- Containers end -->

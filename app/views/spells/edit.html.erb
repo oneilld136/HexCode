@@ -1,0 +1,26 @@
+<center> <h1> ⛓ Edit Spell ⛓</h1></center>
+
+
+<h3><%= form_for @spell, method: "put" do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br><br>
+
+  <%= f.label :category %>
+  <%= f.text_field :category %><br><br>
+
+  <%= f.label :magical_supplies %>
+  <%= f.text_area :magical_supplies %><br><br>
+
+  <%= f.label :instructions %>
+  <%= f.text_area :instructions %><br><br>
+
+  <%=f.label :interactive %>
+  <%=f.check_box :interactive %><br><br>
+
+  <%= f.submit "Brew" %></h3>
+<br>
+<br>
+<br>
+
+  <h3><%= link_to "Back to Profile", @current_user, class:'link-to-text-color' %></h3>
+<% end %>

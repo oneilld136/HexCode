@@ -1,14 +1,35 @@
 <br>
-<br><br><br><br>
-<center><h1 style="color:white;"> Welcome to HexCode </h1></center>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-<%= form_tag '/login' do %>
+
+<center><h1 style="color:#D5C1EE;">🔮 Welcome to HexCode 🔮</h1></center>
+
+<%if flash[:messages] %>
+   <ul>
+  <%=flash[:messages]  %>
+       <% end %>
+   </ul>
+
+
+
+
+
+<center><h3><%= form_tag '/login' do %>
 <%= label_tag :username %>
 <%= text_field_tag :username %>
 <%= label_tag :password%>
 <%= password_field_tag :password%>
-<%= submit_tag "Login"%>
+<%= submit_tag "Login"%></h3>
 <%end%>
 
-<%= link_to "Join The Coven", new_user_path %>
+<br>
+<br>
+<br>
+
+
+<h2><%=link_to "Join the Coven", new_user_path,  class: 'link-to-text-color'%></h2>

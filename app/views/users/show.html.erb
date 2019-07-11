@@ -1,23 +1,76 @@
-<h1> Welcome <%= @user.name %> </h1>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>✨HexCode✨</title>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    </style>
+
+  </head>
+
+<body>
+<center><h1> Welcome Back 🌙  <%= @user.name %> </h1>
 <br>
 
-<h2> <%= @user.zodiac_sign %></h2>
-<br>
+<h2>💎 Your Spells 💎 </h2></center>
+  <center><ul>
+    <% @user.spells.each do |spell| %>
+        <h3><li><%= link_to spell.name, spell_path, class: 'link-to-text-color' %></li></h3>
+    <% end %>
+  </ul></center>
 
-<h2> <%= @user.bio %></h2>
-<br>
 
-- Add horoscope of the day // Ask Mallory and partner jic
-<br>
+    <h2>☪️ <%=@user.zodiac_sign %> daily horoscope  </h2>
 
-<h2>:crystal_ball: Here is a list of your spells :crystal_ball:</h2>
-
-<br>
-
-Create A Spell   Search Spells    Join A Coven
+   <p><%=@user.h_daily%></p>
 
 <br>
+
+<%moon = Lunartic.today %>
+ <% new_moon = moon.phase %>
+
+
+
+<h2><img src="https://media.giphy.com/media/NtDBzumKRZz1e/giphy.gif" width="150" height="150" />   today's moon phase : <%=new_moon.to_s.sub('_', ' ') %></h2>
+
+
+<br>
+
+<center><img src="https://starinastar.com/wp-content/uploads/2018/08/Moon_Phases_Names_and_images_in_order-768x212.png"></center>
+
+
+<!-- <center><iframe src="https://giphy.com/embed/xUNd9OwkwTb2GhJ7eo" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center> -->
+
+<!-- moon.percent_full -->
+
+
+
+
+<br>
 <br>
 <br>
 
-<%= link_to "Delete Account", '/'  %>
+
+
+<center><h2><%= link_to "Create A Spell", new_spell_path,class: 'link-to-text-color'%>  * ~ * ~ * ~ ~ * ~ * ~ * ~ <%= link_to "View Herbs", herbs_path ,class: 'link-to-text-color'%> * ~ * ~ * ~ ~ * ~ * ~ * ~  <%= link_to "Search Spells", spells_path, class: 'link-to-text-color' %></h2>
+
+<br>
+<br>
+<br>
+
+
+<nav class="bottom-nav">
+  <% if @logged_in %>
+   <%= link_to "Log out #{@user.username}", "/logout", method: :delete, class: "bottom-nav"%>
+  <%end %>
+  <%= link_to 'Delete Account', {:controller => :users, :action => 'destroy', :id => @user.id}, :method => :delete, data: {confirm: "Exiled"}, class: "bottom-nav" %>
+</nav>
+
+
+ </center></body>

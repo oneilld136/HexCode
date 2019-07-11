@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
 
-  skip_before_action :authorized?, only: [:new, :create]
+  skip_before_action :authorized?, only: [:new, :create, :welcome]
 
   def new
   end
@@ -11,8 +11,13 @@ class LoginController < ApplicationController
       session[:user_id] = @user.id
       redirect_to @user
     else
-      flash[:messages] = "Incorrect username or password!"
+      flash[:messages] = "Username or Password Doesn't Exist!"
       redirect_to '/'
     end
   end
-end 
+
+  def destroy
+    logout
+  redirect_to '/'
+end
+end

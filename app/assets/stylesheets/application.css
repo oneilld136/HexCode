@@ -1,15 +1,112 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-image: url(stars.png), url(clouds.png);
+  }
+
+  h1 {
+    font-family: Apple Chancery, cursive;
+    color: #AC90C2;
+    font-size: 65px;
+    font-weight:250 ;
+
+
+  }
+
+  h2 {
+    font-family: serif;
+    color: #E6D7B2  ;
+    font-size: 30px;
+    font-weight:100 ;
+  }
+
+  h3 {
+    font-family: serif;
+    font-weight: 100 ;
+    color: #BFF3D3   ;
+    font-size: 20px;
+  }
+
+  p
+   {
+    font-family: serif;
+    font-stretch: semi-expanded
+    font-weight: 100 ;
+    color: #ADF0F4      ;
+    font-size: 25px;
+  }
+
+  button {
+  background: url(hat.png);
+  text-indent:30px;
+   display:block;
+
+}
+
+li
+ {
+  font-family: serif;
+  font-stretch: semi-expanded
+  list-style-type: none;
+  font-weight: 100 ;
+  color: #CBF4AD;
+  font-size: 25px;
+}
+
+  .module {
+  cursor: url("ouija_planchette_by_mpissott-daju0uw.png"), pointer;
+}
+
+
+
+link-to-text-coven {
+
+  font-family: Impact, fantasy;
+  font-weight: 200 ;
+  color: #E6B845;
+  font-size: 20px;
+}
+.edit-btn {
+  width: 15%;
+  height: 100px;
+  background-color: #927e7961;;
+  background-repeat: repeat
+
+}
+
+.login {
+  width: 15%;
+  height: 100px;
+  background-color:
+  background-repeat: repeat
+
+}
+
+.link-to-text-color {
+  color: #E6B845;
+}
+
+.link-to-text-spell-color{
+  color: #581845;
+  font-size: 17px;
+  text-align: center;
+  overflow-wrap: break-word;
+
+
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #250A05;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    transition: 0.8s;
+
+}
+
+);
